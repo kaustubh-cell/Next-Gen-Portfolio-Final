@@ -1,27 +1,68 @@
-<html>
-    <head>
-        <meta charset="UTF-8">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>K8BH // Terminal</title>
-    <link href="https://fonts.googleapis.com/css2?family=Special+Elite&family=Courier+Prime:wght@400;700&display=swap" rel="stylesheet">
-    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-    <link rel="stylesheet" href="main_style.css">
+    <title>K8BH Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <div class="logo"><span class="dot">.</span></div>
+        <button id="theme-toggle"> Dark</button>
+    </nav>
 
-        </head>
-        <body>
-    <div class="crt-scanlines"></div>
+    <header class="hero fade-in">
+        <div class="hero-text">
+            <h1>Hey, I'm <span class="highlight">K8BH</span></h1>
+            <p id="typewriter" class="subtitle"></p>
+        </div>
+        <div class="avatar"></div>
+    </header>
 
-    <div id="terminal-cursor" class="terminal-cursor"></div>
+    <section class="content fade-in" style="animation-delay: 0.2s;">
+        <h2>About Me</h2>
+        <p>I'm a developer learning the ropes at Hack Club's Resolution. I care about writing clean code, building intuitive user experiences, and shipping projects that actually matter.</p>
+        
+        <h2>Skills</h2>
+        <div class="skills-container">
+            <span class="skill-tag">HTML5</span>
+            <span class="skill-tag">CSS3</span>
+            <span class="skill-tag">JavaScript</span>
+            <span class="skill-tag">Git & GitHub</span>
+            <span class="skill-tag">Problem Solving</span>
+        </div>
 
-    <div id="boot-screen">
-        <div id="boot-text"></div>
-    </div>
-    <canvas id="matrix-canvas"></canvas>
+        <h2>Projects</h2>
+        <div class="project-grid">
+            <div class="project-card">
+                <h3>Personal Website</h3>
+                <p>Built from scratch using semantic HTML, modern CSS, and vanilla JS. Features dark mode and interactive elements.</p>
+                <a href="#" class="project-link">View Code →</a>
+            </div>
+            <div class="project-card">
+                <h3>Next Big Thing</h3>
+                <p>Currently brainstorming my next project for the Resolution pathway. Stay tuned.</p>
+                <a href="#" class="project-link">Coming Soon →</a>
+            </div>
+        </div>
 
-    <section class="hero" id="hero-section">
-        <h1 id="main-title">K8BH<br>SYS_Archive</h1>
-        <p id="main-subtitle">
-            // AKA Kaustubh Patil// AGE: 14 // DEV & Devloper<br>
-            Status: Compiling the Future...
-        </p>
-        </html>
+        <div class="interactive-zone">
+            <h2>Vibe Check</h2>
+            <p>Let's test that JavaScript logic.</p>
+            <button id="vibe-btn">Give 10 Vibes</button>
+            <div class="progress-bar-container">
+                <div id="vibe-progress"></div>
+            </div>
+            <p class="count-display">Vibe level: <span id="vibe-count">0</span>/100</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>Reach out at <a href="mailto:your.email@example.com">your.email@example.com</a></p>
+        <p>© 2026 K8BH. Built with ☕ and code.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
