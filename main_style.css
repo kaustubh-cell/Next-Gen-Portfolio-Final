@@ -77,15 +77,7 @@ nav {
     min-height: 30px;
 }
 
-.avatar {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    background-color: var(--card-bg);
-    border: 2px solid var(--accent-color);
-    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
-    flex-shrink: 0;
-}
+
 
 h2 {
     margin: 50px 0 20px;
